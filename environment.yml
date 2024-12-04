@@ -1,0 +1,13 @@
+name: sdtutil
+channels:
+  - conda-forge
+dependencies:
+  # project dependencies
+  - python >= 3.9
+  - numpy
+  - sdtfile
+  - tifffile
+  # project from source
+  - pip
+  - pip:
+    - -e .

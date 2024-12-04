@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdtutil"
+version = "0.0.1.dev0"
+description = "Tools for working with SDT files"
+license = {text = "The Unlicense"}
+authors = [{name="Edward Evans", email="elevans2@wisc.edu"}]
+readme = "README.md"
+keywords = ["sdt"]
+requires-python = ">=3.8"
+dependencies = [
+	"numpy",
+	"sdtfile",
+	"tiffile"
+]
+
+[tool.setuptools]
+platforms = ["any"]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
